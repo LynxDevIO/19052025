@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tela_3_activity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerador de Valor"
+        android:textSize="32sp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/limite_inferior"
+            android:hint="Limite Inferior"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/limite_superior"
+            android:hint="Limite Superior"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/valor_gerado"
+        android:textColor="#E91E63"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="26dp" />
+
+    <Button
+        android:id="@+id/btn_gerar"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Gerar Valor"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#03A9F4"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>

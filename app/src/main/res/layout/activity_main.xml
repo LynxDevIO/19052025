@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="20dp"
+        android:backgroundTint="#777777"
+        android:layout_marginBottom="36dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Apresentação"
+                android:textSize="32sp"
+                android:textColor="#EFEFEF"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="36dp"/>
+
+            <TextView
+                android:text="Philipe Pedrosa"
+                android:textSize="16sp"
+                android:textColor="#A3D7FB"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="20241012000794"
+                android:textSize="16sp"
+                android:textColor="#A3D7FB"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Análise e Desenvolvimento de Sistemas"
+                android:textSize="16sp"
+                android:textColor="#A3D7FB"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnAvancar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Avançar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#03A9F4"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+</LinearLayout>

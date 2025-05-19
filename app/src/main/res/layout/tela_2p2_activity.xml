@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tela_3_activity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inversor de Palavra"
+        android:textSize="32sp"
+        android:gravity="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/palavra"
+            android:hint="Palavra"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_inverter"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Inverter"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#03A9F4"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>
