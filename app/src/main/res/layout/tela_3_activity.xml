@@ -14,18 +14,36 @@
         android:layout_marginBottom="10dp" >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:hint="Teste"
+            android:id="@+id/texto_registro"
+            android:hint="Texto do Registro"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/data"
+        android:text="Definir Data"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="definirData"/>
+
     <Button
+        android:id="@+id/btn_registrar_evento"
+        android:layout_marginBottom="20dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Teste"
-        android:textColor="#FFFFFF"
         android:backgroundTint="#03A9F4"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        android:text="Registrar Evento"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
 
 </LinearLayout>

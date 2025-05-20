@@ -36,7 +36,7 @@ public class Tela2Activity extends AppCompatActivity {
         });
 
         btnRegistroEventos.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Tela2p3Activity.class);
+            Intent intent = new Intent(this, Tela3Activity.class);
             startActivity(intent);
         });
     }

@@ -1,5 +1,7 @@
 package puc.mobile.a19052025.model;
 
+import androidx.annotation.NonNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,7 @@ public class Evento {
     private String desc;
     private String data;
 
-    private final List<Evento> eventos = new ArrayList<>();
+    private static final List<Evento> eventos = new ArrayList<>();
 
     public Evento() {
         eventos.add(this);
@@ -46,7 +48,13 @@ public class Evento {
         this.data = data;
     }
 
-    public List<Evento> getEventos() {
+    public static List<Evento> getEventos() {
         return eventos;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "ID: " + this.id + " | DESC: " + this.desc + " | DATA: " + this.data;
     }
 }

@@ -26,6 +26,7 @@ public class Tela2p2Activity extends AppCompatActivity {
     }
 
     private void configurarInterface() {
+        palavra = findViewById(R.id.palavra);
         btnInverter = findViewById(R.id.btn_inverter);
     }
 
@@ -40,8 +41,6 @@ public class Tela2p2Activity extends AppCompatActivity {
     }
 
     private String inverterPalavra() {
-        char[] array = palavra.getText().toString().toCharArray();
-        List<Character> listaCaracteresPalavra = new ArrayList<>();
-        return listaCaracteresPalavra.sort(item -> listaCaracteresPalavra.indexOf(item) <= listaCaracteresPalavra.indexOf(item));
+        return new StringBuilder(palavra.getText().toString()).reverse().toString();
     }
 }

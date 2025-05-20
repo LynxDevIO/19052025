@@ -4,12 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class Tela2p1Activity extends AppCompatActivity {
+    private TextView valorGerado;
     private EditText limiteInferior, limiteSuperior;
     private Button btnGerar;
 
@@ -23,6 +27,7 @@ public class Tela2p1Activity extends AppCompatActivity {
     }
 
     private void configurarInterface() {
+        valorGerado = findViewById(R.id.valor_gerado);
         limiteInferior = findViewById(R.id.limite_inferior);
         limiteSuperior = findViewById(R.id.limite_superior);
         btnGerar = findViewById(R.id.btn_gerar);
@@ -31,10 +36,13 @@ public class Tela2p1Activity extends AppCompatActivity {
     private void configurarListeners() {
         btnGerar.setOnClickListener(v -> {
             if (checarValores()) {
-                gerarValor();
+                float valor = gerarValor();
+                valorGerado.setText(String.format(Locale.getDefault(), "%.2f", valor));
             } else {
-                gerarValor(Float.parseFloat(limiteInferior.getText().toString()), Float.parseFloat(limiteSuperior.getText().toString()));
+                float valor = gerarValor(Float.parseFloat(limiteInferior.getText().toString()), Float.parseFloat(limiteSuperior.getText().toString()));
+                valorGerado.setText(String.format(Locale.getDefault(), "%.2f", valor));
             }
+            Toast.makeText(this, "Valor gerado com sucesso!", Toast.LENGTH_SHORT).show();
         });
     }
 

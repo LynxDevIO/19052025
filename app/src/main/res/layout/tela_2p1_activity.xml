@@ -1,6 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/tela_3_activity"
+    android:id="@+id/tela_2p1_activity"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:gravity="center"
@@ -37,6 +37,7 @@
 
     <TextView
         android:id="@+id/valor_gerado"
+        android:text="o valor aparecerá aqui"
         android:textColor="#E91E63"
         android:gravity="center"
         android:layout_width="match_parent"

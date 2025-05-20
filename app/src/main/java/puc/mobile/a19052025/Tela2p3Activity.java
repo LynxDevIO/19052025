@@ -21,7 +21,7 @@ public class Tela2p3Activity extends AppCompatActivity {
     }
 
     private void configurarInterface() {
-        textoInvertido.findViewById(R.id.texto_invertido);
+        textoInvertido = findViewById(R.id.texto_invertido);
         btnNavegarRegistros = findViewById(R.id.btn_navegar_registros);
 
         textoInvertido.setText(getIntent().getStringExtra("palavra"));

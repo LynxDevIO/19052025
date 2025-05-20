@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Tela2Activity" android:exported="false" />
+        <activity android:name=".Tela2p1Activity" android:exported="false" />
+        <activity android:name=".Tela2p2Activity" android:exported="false" />
+        <activity android:name=".Tela2p3Activity" android:exported="false" />
+        <activity android:name=".Tela3Activity" android:exported="false" />
     </application>
 
 </manifest>
